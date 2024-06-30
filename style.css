@@ -1,0 +1,265 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a, img, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #dcd5d5;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .btn {
+    color: #fff;
+    background: #ff0099;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    float: right;
+}
+.btn:hover {
+    background-color: #726e70;
+}
+
+section.hero {
+    background: #fff;
+    color: #333;
+    padding: 40px 0;
+}
+
+section.hero .hero-content {
+    text-align: center;
+}
+
+section.hero .hero-content img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+section.hero .hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section.hero .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+section.hero .hero-content .btn {
+    color: #fff;
+    background: #ff0099;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+section.hero .hero-content .btn:hover {
+    background-color: #726e70;
+}
+section.hero .hero-stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section.hero .hero-stats .stat {
+    text-align: center;
+    margin: 0 20px;
+}
+
+section.hero .hero-stats .stat img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+section.hero .hero-stats .stat h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section.hero .hero-stats .stat p {
+    font-size: 1.2em;
+}
+
+section.feature {
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+section.feature .feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+section.feature .feature-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+section.feature .feature-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section.feature .feature-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+section.feature .feature-content img {
+    max-width: 100%;
+}
+
+section.cta {
+    background: #bab6b8;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+section.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section.cta .btn {
+    color: #fff;
+    background: #ff0099;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 39px;
+    float: right;
+}
+footer {
+    background-color: #3a3c34fa;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-content .logo img {
+    height: 40px;
+}
+
+.footer-content p {
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-links img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 30px;
+}
+
+/* Newsletter Styles */
+.newsletter {
+    max-width: 400px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff0099;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #96e561;
+}
+
+@media (max-width: 768px) {
+    .hero-stats {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
